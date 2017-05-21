@@ -58,7 +58,7 @@ class S3Account:
 					if k.get_metadata('file'):
 						path=k.get_metadata('file')
 				except Exception:
-					print "Forgot to give the filename"
+					print("Forgot to give the filename")
 					sys.exit(0) 
 				return k.get_contents_to_filename(path)
 			else:
